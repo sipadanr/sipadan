@@ -9,7 +9,6 @@ import seamlessJourneysImage from "@/assets/service-galleries/seamless-journeys/
 import tailoredExperiencesImage from "@/assets/tailored-experiences.jpg";
 import bbqImage from "@/assets/service-galleries/bbq.png";
 import buffetStyleImage from "@/assets/service-galleries/buffetStyle.png";
-import familyDiningImage from "@/assets/service-galleries/familyDinnerV1.png";
 import kapalaiChiefImage from "@/assets/service-galleries/kapalaiChief.png";
 import serviceStaffImage from "@/assets/service-galleries/serviceStaff.png";
 
@@ -53,9 +52,8 @@ const ServicesSection = () => {
   const foodImages = [
     { image: bbqImage, title: foodImagesData?.[0]?.title ?? "BBQ Night" },
     { image: buffetStyleImage, title: foodImagesData?.[1]?.title ?? "Buffet Style" },
-    { image: familyDiningImage, title: foodImagesData?.[2]?.title ?? "Family Dinner" },
-    { image: kapalaiChiefImage, title: foodImagesData?.[3]?.title ?? "Kapalai Chefs" },
-    { image: serviceStaffImage, title: foodImagesData?.[4]?.title ?? "Service Staff" },
+    { image: kapalaiChiefImage, title: foodImagesData?.[2]?.title ?? "Kapalai Chefs" },
+    { image: serviceStaffImage, title: foodImagesData?.[3]?.title ?? "Service Staff" },
   ];
 
   const servicesData = t("services.items", { returnObjects: true }) as Array<{
